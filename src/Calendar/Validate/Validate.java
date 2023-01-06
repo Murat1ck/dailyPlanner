@@ -1,6 +1,6 @@
-package dailyPlanner.Validate;
+package Calendar.Validate;
 
-import dailyPlanner.WrongInputException;
+import Calendar.WrongInputException;
 
 public class Validate {
     public static String checkString(String str) throws WrongInputException {

@@ -1,4 +1,4 @@
-package dailyPlanner;
+package Calendar;
 
 import java.time.LocalDateTime;
 

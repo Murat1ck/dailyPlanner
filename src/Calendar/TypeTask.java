@@ -1,4 +1,4 @@
-package dailyPlanner;
+package Calendar;
 
 public enum TypeTask {
     WORK(0),
