@@ -1,11 +1,7 @@
-package dailyPlanner;
+package Calendar;
 
 import java.util.Calendar;
 import java.util.Scanner;
-
-import static dailyPlanner.Calendar.addTask;
-import static dailyPlanner.Calendar.deleteTask;
-import static java.util.Calendar.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,19 +15,19 @@ public class Main {
                     switch (menu) {
 
                         case 1:
-                            dailyPlanner.Calendar.addTask(scanner);
+                            Calendar.Calendar.addTask(scanner);
                             break;
                         case 2:
-                            dailyPlanner.Calendar.deleteTask(scanner);
+                            Calendar.Calendar.deleteTask(scanner);
                             break;
                         case 3:
-                            dailyPlanner.Calendar.getTasksByDay(scanner);
+                            Calendar.Calendar.getTasksByDay(scanner);
                             break;
                         case 4:
-                            dailyPlanner.Calendar.getGroupByDate(scanner);
+                            Calendar.Calendar.getGroupByDate(scanner);
                             break;
                         case 5:
-                            dailyPlanner.Calendar.editTask(scanner);
+                            Calendar.Calendar.editTask(scanner);
                             break;
                         case 0:
                             break label;
