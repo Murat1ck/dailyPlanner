@@ -1,4 +1,4 @@
-package dailyPlanner;
+package Calendar;
 
 import java.time.LocalDateTime;
 
@@ -10,5 +10,5 @@ public class YearlyTask extends Task implements Repeatable {
 
     @Override
     public boolean checkOccurance(LocalDateTime requestedDate) {
-        return getFirstDate().getYear() == requestedDate.getYear();    }
+        return getFirstDate().getDayOfYear() == requestedDate.getDayOfYear();    }
 }

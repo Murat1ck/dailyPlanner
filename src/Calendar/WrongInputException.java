@@ -1,4 +1,4 @@
-package dailyPlanner;
+package Calendar;
 
 public class WrongInputException extends Exception {
     public WrongInputException() {
