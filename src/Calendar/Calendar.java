@@ -1,6 +1,6 @@
-package dailyPlanner;
+package Calendar;
 
-import dailyPlanner.Validate.Validate;
+import Calendar.Validate.Validate;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

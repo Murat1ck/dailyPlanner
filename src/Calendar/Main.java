@@ -1,10 +1,9 @@
-package dailyPlanner;
+package Calendar;
 
 import java.util.Calendar;
 import java.util.Scanner;
 
-import static dailyPlanner.Calendar.addTask;
-import static dailyPlanner.Calendar.deleteTask;
+import static Calendar.Calendar.*;
 import static java.util.Calendar.*;
 
 public class Main {
@@ -12,26 +11,26 @@ public class Main {
         try (Scanner scanner = new Scanner(System.in)) {
             label:
             while (true) {
-                System.out.print("Выберите пункт меню: ");
+                System.out.print("Выберите пункт меню: " + " ");
                 printMenu();
                 if (scanner.hasNextInt()) {
                     int menu = scanner.nextInt();
                     switch (menu) {
 
                         case 1:
-                            dailyPlanner.Calendar.addTask(scanner);
+                            addTask(scanner);
                             break;
                         case 2:
-                            dailyPlanner.Calendar.deleteTask(scanner);
+                            deleteTask(scanner);
                             break;
                         case 3:
-                            dailyPlanner.Calendar.getTasksByDay(scanner);
+                            getTasksByDay(scanner);
                             break;
                         case 4:
-                            dailyPlanner.Calendar.getGroupByDate(scanner);
+                            getGroupByDate(scanner);
                             break;
                         case 5:
-                            dailyPlanner.Calendar.editTask(scanner);
+                            editTask(scanner);
                             break;
                         case 0:
                             break label;
