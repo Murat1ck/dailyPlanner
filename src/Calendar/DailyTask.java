@@ -10,6 +10,6 @@ public class DailyTask extends Task implements Repeatable{
 
     @Override
     public boolean checkOccurance(LocalDateTime requestedDate) {
-        return getFirstDate().getDayOfYear() == (requestedDate.getDayOfYear());
+        return true;
     }
 }
